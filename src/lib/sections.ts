@@ -10,6 +10,12 @@ interface HeadingNode extends Node {
   }
 }
 
+type H1Node = HeadingNode & {
+  attributes: {
+    level: 1
+  }
+}
+
 type H2Node = HeadingNode & {
   attributes: {
     level: 2
@@ -31,6 +37,10 @@ function isHeadingNode(node: Node): node is HeadingNode {
   )
 }
 
+function isH1Node(node: Node): node is H1Node {
+  return isHeadingNode(node) && node.attributes.level === 1
+}
+
 function isH2Node(node: Node): node is H2Node {
   return isHeadingNode(node) && node.attributes.level === 2
 }
@@ -50,13 +60,13 @@ function getNodeText(node: Node) {
   return text
 }
 
-export type Subsection = H3Node['attributes'] & {
+export type Subsection = (H3Node['attributes'] | H2Node['attributes']) & {
   id: string
   title: string
   children?: undefined
 }
 
-export type Section = H2Node['attributes'] & {
+export type Section = (H1Node['attributes'] | H2Node['attributes']) & {
   id: string
   title: string
   children: Array<Subsection>
@@ -69,14 +79,14 @@ export function collectSections(
   let sections: Array<Section> = []
 
   for (let node of nodes) {
-    if (isH2Node(node) || isH3Node(node)) {
+    if (isH1Node(node) || isH2Node(node) || isH3Node(node)) {
       let title = getNodeText(node)
       if (title) {
         let id = slugify(title)
         if (isH3Node(node)) {
           if (!sections[sections.length - 1]) {
             throw new Error(
-              'Cannot add `h3` to table of contents without a preceding `h2`',
+              'Cannot add `h3` to table of contents without a preceding `h1` or `h2`',
             )
           }
           sections[sections.length - 1].children.push({
@@ -85,6 +95,7 @@ export function collectSections(
             title,
           })
         } else {
+          // Handle both H1 and H2 as main sections
           sections.push({ ...node.attributes, id, title, children: [] })
         }
       }

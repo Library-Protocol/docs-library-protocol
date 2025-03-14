@@ -208,7 +208,7 @@ function SearchResult({
       )}
       <p
         className="text-sm text-slate-700 group-aria-selected:text-amber-900 dark:text-slate-300 dark:group-aria-selected:text-amber-600"
-        dangerouslySetInnerHTML={{ __html: result.content }}
+        dangerouslySetInnerHTML={{ __html: result.title }}
       />
     </li>
   )
@@ -371,9 +371,9 @@ function SearchDialog({
         onClose={() => close(autocomplete)}
         className={clsx('fixed inset-0 z-50', className)}
       >
-        <div className="fixed inset-0 bg-slate-900/50 backdrop-blur" />
+        <div className="fixed inset-0 bg-slate-900/50 backdrop-blur dark:bg-slate-900/80 dark:backdrop-blur-sm" />
 
-        <div className="fixed inset-0 overflow-y-auto px-4 py-4 sm:px-6 sm:py-20 md:py-32 lg:px-8 lg:py-[15vh]">
+        <div className="fixed inset-0 overflow-y-auto px-4 py-4 sm:px-6 sm:py-20 md:py-32 lg:px-8 lg:py-[15vh] scrollbar-invisible">
           <DialogPanel className="mx-auto transform-gpu overflow-hidden rounded-xl bg-white shadow-xl sm:max-w-xl dark:bg-slate-800 dark:ring-1 dark:ring-slate-700">
             <div {...autocomplete.getRootProps({})}>
               <form

@@ -1,4 +1,5 @@
 import { type Node } from '@markdoc/markdoc'
+import { Fragment } from 'react'
 
 import { DocsHeader } from '@/components/DocsHeader'
 import { PrevNextLinks } from '@/components/PrevNextLinks'
@@ -18,15 +19,20 @@ export function DocsLayout({
   let tableOfContents = collectSections(nodes)
 
   return (
-    <>
-      <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16">
-        <article>
+    <Fragment>
+      <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16 scrollbar-invisible">
+        <article className="overflow-visible">
           <DocsHeader title={title} />
           <Prose>{children}</Prose>
         </article>
         <PrevNextLinks />
       </div>
-      <TableOfContents tableOfContents={tableOfContents} />
-    </>
+      
+      <div className="hidden xl:sticky xl:top-[4.75rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.75rem)] xl:flex-none xl:py-16 xl:pr-6">
+        <div className="px-8">
+          <TableOfContents tableOfContents={tableOfContents} />
+        </div>
+      </div>
+    </Fragment>
   )
 }

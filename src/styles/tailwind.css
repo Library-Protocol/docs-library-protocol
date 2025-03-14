@@ -7,4 +7,92 @@
   [inert] ::-webkit-scrollbar {
     display: none;
   }
+  
+  /* Global scrollbar styling - make all scrollbars invisible by default */
+  * {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  
+  *::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  /* Specifically target code blocks and terminal elements */
+  pre, code, .terminal, [class*="overflow-"] {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    white-space: pre-wrap !important; /* Allow text to wrap */
+    overflow-wrap: break-word !important; /* Break long words if needed */
+    word-break: break-word !important; /* Break words at appropriate points */
+  }
+  
+  pre::-webkit-scrollbar, 
+  code::-webkit-scrollbar, 
+  .terminal::-webkit-scrollbar,
+  [class*="overflow-"]::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+  
+  /* Fix the width of code containers to prevent horizontal scrolling */
+  pre {
+    max-width: 100% !important;
+    overflow-x: visible !important;
+  }
+}
+
+@layer utilities {
+  /* Custom scrollbar styling */
+  .scrollbar-thin {
+    scrollbar-width: thin; /* Firefox */
+    
+    /* Webkit browsers */
+    &::-webkit-scrollbar {
+      width: 2px;
+      height: 2px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(100, 116, 139, 0.3); /* slate-500/30 */
+      border-radius: 9999px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(100, 116, 139, 0.5); /* slate-500/50 */
+    }
+    
+    /* Hide scrollbar while not scrolling but allow scrolling */
+    &:not(:hover)::-webkit-scrollbar-thumb {
+      background: transparent;
+    }
+    
+    /* Dark mode */
+    .dark &::-webkit-scrollbar-thumb {
+      background-color: rgba(148, 163, 184, 0.3); /* slate-400/30 */
+    }
+    .dark &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(148, 163, 184, 0.5); /* slate-400/50 */
+    }
+    
+    overflow-y: auto;
+  }
+
+  /* Invisible scrollbar but with scroll functionality */
+  .scrollbar-invisible {
+    /* Firefox */
+    scrollbar-width: none;
+    
+    /* Webkit browsers */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
+    /* IE and Edge */
+    -ms-overflow-style: none;
+    
+    overflow-y: auto;
+  }
 }

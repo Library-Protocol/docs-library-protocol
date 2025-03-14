@@ -17,8 +17,8 @@ export function Fence({
       theme={{ plain: {}, styles: [] }}
     >
       {({ className, style, tokens, getTokenProps }) => (
-        <pre className={className} style={style}>
-          <code>
+        <pre className={`${className} whitespace-pre-wrap break-words max-w-full`} style={style}>
+          <code className="whitespace-pre-wrap break-words">
             {tokens.map((line, lineIndex) => (
               <Fragment key={lineIndex}>
                 {line
