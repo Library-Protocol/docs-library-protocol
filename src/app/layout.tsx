@@ -24,10 +24,10 @@ const lexend = localFont({
 export const metadata: Metadata = {
   title: {
     template: '%s - Library Protocol Docs',
-    default: 'Library Protocol - Decentralized Content Economy for Creators and Consumers',
+    default: 'Library Protocol - Bringing libraries onchain',
   },
   description:
-    'Library Protocol documentation - A decentralized platform that connects creators and consumers through innovative reward mechanisms',
+    'Reimagining libraries for the digital and onchainage',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
