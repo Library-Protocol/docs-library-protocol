@@ -20,16 +20,16 @@ export function DocsLayout({
 
   return (
     <Fragment>
-      <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16 scrollbar-invisible">
-        <article className="overflow-visible">
+      <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16 scrollbar-invisible bg-transparent">
+        <article className="overflow-visible bg-transparent">
           <DocsHeader title={title} />
           <Prose>{children}</Prose>
         </article>
         <PrevNextLinks />
       </div>
       
-      <div className="hidden xl:sticky xl:top-[4.75rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.75rem)] xl:flex-none xl:py-16 xl:pr-6">
-        <div className="px-8">
+      <div className="hidden xl:sticky xl:top-[4.75rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.75rem)] xl:flex-none xl:py-16 xl:pr-6 bg-transparent">
+        <div className="px-8 bg-transparent">
           <TableOfContents tableOfContents={tableOfContents} />
         </div>
       </div>

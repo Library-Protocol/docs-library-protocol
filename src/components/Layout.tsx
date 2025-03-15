@@ -81,7 +81,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />
           <div className="absolute bottom-0 right-0 top-16 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block" />
           <div className="absolute bottom-0 right-0 top-28 hidden w-px bg-slate-800 dark:block" />
-          <div className="sticky top-[4.75rem] -ml-0.5 h-[calc(100vh-4.75rem)] w-64 overflow-x-hidden py-16 pl-0.5 pr-8 xl:w-72 xl:pr-16 scrollbar-invisible">
+          <div className="sticky top-[4.75rem] -ml-0.5 h-[calc(100vh-4.75rem)] w-64 overflow-x-hidden py-16 pl-0.5 pr-8 xl:w-72 xl:pr-16 scrollbar-invisible bg-transparent">
             <Navigation />
           </div>
         </div>
@@ -89,8 +89,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         
         {isDocsPage && (
-          <div className="hidden xl:sticky xl:top-[4.75rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.75rem)] xl:flex-none xl:py-16 xl:pr-6 scrollbar-invisible">
-            <div className="px-8">
+          <div className="hidden xl:sticky xl:top-[4.75rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.75rem)] xl:flex-none xl:py-16 xl:pr-6 scrollbar-invisible bg-transparent">
+            <div className="px-8 bg-transparent">
               {/* Table of contents will be rendered via DocsLayout */}
             </div>
           </div>

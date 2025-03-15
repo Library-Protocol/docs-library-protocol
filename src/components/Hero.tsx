@@ -25,13 +25,17 @@ export function Hero() {
             />
             <div className="relative">
               <p className="inline bg-gradient-to-r from-amber-100 via-white to-amber-100 dark:from-amber-200 dark:via-amber-100 dark:to-amber-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-                Create, Share, Collect, Earn
+                Reimagining Libraries for the Digital Age
               </p>
               <p className="mt-3 text-2xl tracking-tight text-white dark:text-white">
-                Library Protocol connects creators and collectors through decentralized content NFTs and innovative reward mechanisms.
+                Library Protocol bridges the physical and digital worlds, connecting libraries and readers through blockchain technology to create a global knowledge network.
+              </p>
+              <p className="mt-6 text-lg text-amber-100 dark:text-amber-100">
+                List your collection on-chain. Discover local treasures. Build trust through verified transactions. Join the movement to democratize access to knowledge.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/docs/mission">Learn More</Button>
+                <Button href="/docs/mission">Explore the Vision</Button>
+                <Button href="/docs/blockchain-role" variant="secondary">How It Works</Button>
               </div>
             </div>
           </div>

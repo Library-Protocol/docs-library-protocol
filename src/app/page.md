@@ -1,14 +1,14 @@
-
 ## What is Library Protocol
 
-Library Protocol is a book-sharing application that allows users to put their physical libraries on the blockchain, lend books, and borrow books. It is a network that connects book/library owners with book lovers, readers, and curious minds.
+Library Protocol is a decentralized application that connects physical libraries with readers through blockchain technology. It's a platform that allows library owners to list their collections on-chain, and enables readers to discover, borrow, and lend books in a transparent and trustworthy manner.
 
 ### Key Features
 
-- **Content Monetization**: Creators can publish and monetize their work directly as NFTs
-- **Prize Pool Mechanics**: Unique raffle system that rewards loyal fans
-- **Decentralized Rewards**: Fair distribution of rewards to both creators and consumers
-- **Smart Contract Security**: Built with robust security measures to protect all participants
+- **Onchain Library Listings**: Put your physical book collection on the blockchain
+- **Global Library Network**: Connect with readers and libraries worldwide
+- **Transparent Book Lending**: All lending activities are recorded on-chain
+- **Community Governance**: Participate in shaping the future of the protocol
+- **Trust-Based Reputation**: Build credibility through verified transactions
 
 ### Get Started
 
@@ -18,4 +18,4 @@ Browse through our documentation to learn more about how Library Protocol works 
 npm run dev # Start the development server to explore this documentation locally
 ```
 
-> **Note:** This documentation is actively maintained and updated regularly. Check back often for the latest information.
+> **Note:** Library Protocol is transforming how we share books and knowledge, creating bridges between libraries and readers worldwide.

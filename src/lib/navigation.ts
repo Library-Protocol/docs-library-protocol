@@ -1,53 +1,64 @@
 export const navigation = [
   {
+    title: 'Manifesto',
+    links: [
+      { title: 'Manifesto', href: '/docs/manifesto' },
+    ],
+  },
+  {
     title: 'Introduction',
     links: [
-      { title: 'What is Library Protocol?', href: '/' },
-      { title: 'Mission', href: '/docs/mission' },
-      { title: 'Core Objectives', href: '/docs/core-objectives' },
+      { title: 'What is Library Protocol?', href: '/docs/what-is-library-protocol' },
+      { title: 'Vision & Mission', href: '/docs/vision-mission' },
+      { title: 'The Need for Open Knowledge', href: '/docs/open-knowledge' },
     ],
   }, 
   {
-    title: 'Platform Overview',
+    title: 'How It Works',
     links: [
-      { title: 'Content', href: '/docs/content' },
-      { title: 'Content Consumers', href: '/docs/content-consumer' },
-      { title: 'Creators', href: '/docs/creators' },
-      { title: 'Raffle', href: '/docs/raffle' },
+      { title: 'Connecting Libraries & Readers', href: '/docs/connecting-libraries-readers' },
+      { title: 'Borrowing & Lending Books', href: '/docs/borrowing-lending' },
+      { title: 'The Role of Blockchain', href: '/docs/blockchain-role' },
     ],
   }, 
   {
-    title: 'Raffle System',
+    title: 'Key Features',
     links: [
-      { title: 'How It Works', href: '/docs/how-it-works' },
-      { title: 'Prize Pool Mechanics', href: '/docs/prize-pool-mechanics' },
-      { title: 'Winning and Claiming', href: '/docs/winning-and-claiming' },
+      { title: 'Onchain Library Listings', href: '/docs/onchain-listings' },
+      { title: 'Transparent Book Lending', href: '/docs/transparent-lending' },
+      { title: 'Global Access & Community Governance', href: '/docs/global-access' },
     ],
-  },  
+  },
   {
-    title: 'Rewards and Incentives',
+    title: 'Who Can Benefit',
     links: [
-      { title: 'Rewards Distribution', href: '/docs/rewards-distribution' },
-      { title: '', href: '#' },
+      { title: 'Library Owners', href: '/docs/library-owners' },
+      { title: 'Readers & Book Enthusiasts', href: '/docs/readers' },
+      { title: 'Researchers & Educators', href: '/docs/researchers-educators' },
     ],
-  },  
+  },
   {
-    title: 'Technical Architecture',
+    title: 'Benefits & Impact',
     links: [
-      { title: 'Smart Contract Overview', href: '/docs/smart-contract-overview' },
-      { title: 'Security', href: '/docs/security' },
+      { title: 'Expanding Access to Books', href: '/docs/expanding-access' },
+      { title: 'Empowering Communities', href: '/docs/empowering-communities' },
+      { title: 'Enhancing Trust & Transparency', href: '/docs/enhancing-trust' },
     ],
-  }, 
+  },
   {
-    title: 'Roadmap',
+    title: 'Getting Started',
     links: [
-      { title: 'Roadmap', href: '/docs/roadmap' },
+      { title: 'How to List a Library', href: '/docs/list-library' },
+      { title: 'How to Borrow & Lend Books', href: '/docs/borrow-lend' },
+      { title: 'Joining the Community', href: '/docs/join-community' },
     ],
-  }, 
+  },
   {
-    title: 'Contact Information',
+    title: 'The Future of Library Protocol',
     links: [
-      // { title: 'Team', href: '#' },
+      { title: 'Upcoming Features & Roadmap', href: '/docs/roadmap' },
+      { title: 'How to Contribute', href: '/docs/contribute' },
+      { title: 'Envisioning a World of Open Knowledge', href: '/docs/open-knowledge-vision' },
     ],
   },
 ]

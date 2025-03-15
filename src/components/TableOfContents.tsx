@@ -62,26 +62,26 @@ export function TableOfContents({
   }
 
   return (
-    <nav aria-labelledby="on-this-page-title" className="w-56">
+    <nav aria-labelledby="on-this-page-title" className="w-56 bg-transparent dark:bg-transparent">
       {tableOfContents.length > 0 && (
         <>
           <h2
             id="on-this-page-title"
-            className="font-display text-sm font-medium text-slate-900 dark:text-white"
+            className="font-display text-sm font-medium text-amber-800 dark:text-amber-500 bg-transparent"
           >
             On this page
           </h2>
-          <ol role="list" className="mt-4 space-y-3 text-sm">
+          <ol role="list" className="mt-4 space-y-3 text-sm bg-transparent dark:bg-transparent">
             {tableOfContents.map((section) => (
-              <li key={section.id}>
-                <h3>
+              <li key={section.id} className="bg-transparent dark:bg-transparent">
+                <h3 className="bg-transparent dark:bg-transparent">
                   <Link
                     href={`#${section.id}`}
                     className={clsx(
-                      'transition-colors duration-200 ease-in-out',
+                      'transition-colors duration-200 ease-in-out bg-transparent dark:bg-transparent',
                       isActive(section)
                         ? 'text-amber-900 font-medium dark:text-amber-500'
-                        : 'font-normal text-slate-600 hover:text-amber-700 dark:text-slate-400 dark:hover:text-amber-400',
+                        : 'font-normal text-amber-800 hover:text-amber-900 dark:text-white dark:hover:text-amber-300',
                     )}
                   >
                     {section.title}
@@ -90,17 +90,17 @@ export function TableOfContents({
                 {section.children.length > 0 && (
                   <ol
                     role="list"
-                    className="mt-2 space-y-2 pl-4 text-slate-500 dark:text-slate-400 border-l border-slate-200 dark:border-slate-700"
+                    className="mt-2 space-y-2 pl-4 text-amber-700 dark:text-white border-l border-slate-200 dark:border-slate-700 bg-transparent dark:bg-transparent"
                   >
                     {section.children.map((subSection) => (
-                      <li key={subSection.id} className="ml-1">
+                      <li key={subSection.id} className="ml-1 bg-transparent dark:bg-transparent">
                         <Link
                           href={`#${subSection.id}`}
                           className={clsx(
-                            'transition-colors duration-200 ease-in-out block',
+                            'transition-colors duration-200 ease-in-out block bg-transparent dark:bg-transparent',
                             isActive(subSection)
-                              ? 'text-amber-900 font-medium dark:text-amber-500'
-                              : 'hover:text-amber-700 dark:hover:text-amber-400',
+                              ? 'text-amber-900 font-medium dark:text-amber-300'
+                              : 'text-amber-700 hover:text-amber-900 dark:text-white dark:hover:text-amber-300',
                           )}
                         >
                           {subSection.title}
