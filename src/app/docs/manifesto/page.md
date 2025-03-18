@@ -14,13 +14,13 @@ We bring libraries onchain, beyond borders, beyond limits. A global network wher
 
 Library owners should own their collections, not hoard knowledge.
 Readers should access books, not beg for permission.
-Blockchain makes this possible—ensuring trust, transparency, and fairness, without middlemen or centralized control.
+Blockchain makes this possible.
 
 ### DECENTRALIZATION EMPOWERS COMMUNITIES
 
-Libraries should not be controlled by corporations, governments, or gatekeepers.
+Libraries should not only be left to the control of centralized gatekeepers.
 Communities must own their knowledge.
-We believe in a world where people, not institutions, build, share, and govern their own libraries.
+We believe in a world where people and communities build, share, and govern their own knowledge networks.
 
 ### TECHNOLOGY SHOULD SERVE CULTURE
 
@@ -30,9 +30,8 @@ To enable fair access.
 To empower individuals.
 To build an unstoppable, living knowledge network.
 
-### THE FUTURE OF BOOKS IS OPEN AND COLLABORATIVE
+### THE FUTURE OF LIBRARIES IS OPEN AND CONNECTED
 
-This is not just a platform. This is a movement.
-A movement for open knowledge, for shared wisdom, for a future where every book finds its reader and every reader finds their book.
+Knowledge should be free, borderless, and accessible to all. Library Protocol redefines what it means to own, share, and preserve knowledge by bringing libraries onchain. No walls, no restrictions—just a global, interconnected network of books, ideas, and learning.
 
 Library Protocol 📕💓😊

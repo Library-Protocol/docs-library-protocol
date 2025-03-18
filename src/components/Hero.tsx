@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
@@ -27,12 +28,27 @@ export function Hero() {
               <p className="inline bg-gradient-to-r from-amber-100 via-white to-amber-100 dark:from-amber-200 dark:via-amber-100 dark:to-amber-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
                 Reimagining Libraries for the Digital & Onchain Age
               </p>
-              <p className="mt-3 text-2xl tracking-tight text-white dark:text-white">
+              <p className="mt-3 text-2xl tracking-tight text-white dark:text-slate-200">
                 Library Protocol bridges the physical and digital worlds, connecting libraries and readers through blockchain technology to create a global knowledge network.
               </p>
-              <p className="mt-6 text-lg text-amber-100 dark:text-amber-100">
+              <p className="mt-6 text-lg text-amber-100 dark:text-amber-200">
                 List your collection on-chain. Discover local treasures. Build trust through verified transactions. Join the movement to democratize access to knowledge.
               </p>
+              
+              <div className="mt-10 flex gap-4 md:justify-center lg:justify-start">
+                <Link
+                  href="/docs/what-is-library-protocol"
+                  className="rounded-lg bg-amber-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600 transition-colors duration-200"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  href="/docs/manifesto"
+                  className="rounded-lg bg-white/10 px-4 py-2.5 text-sm font-semibold text-white hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors duration-200"
+                >
+                  Read Manifesto →
+                </Link>
+              </div>
             </div>
           </div>
           <div className="relative lg:static xl:pl-10">
