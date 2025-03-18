@@ -29,10 +29,10 @@ export function Hero() {
                 Reimagining Libraries for the Digital & Onchain Age
               </p>
               <p className="mt-3 text-2xl tracking-tight text-white dark:text-slate-200">
-                Library Protocol bridges the physical and digital worlds, connecting libraries and readers through blockchain technology to create a global knowledge network.
+                Bringing physical libraries onchain. Connecting readers with books.
               </p>
               <p className="mt-6 text-lg text-amber-100 dark:text-amber-200">
-                List your collection on-chain. Discover local treasures. Build trust through verified transactions. Join the movement to democratize access to knowledge.
+              Your Bookshelf, shared with the World. 
               </p>
               
               <div className="mt-10 flex gap-4 md:justify-center lg:justify-start">
