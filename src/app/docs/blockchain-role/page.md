@@ -73,4 +73,3 @@ The blockchain foundation provides advantages beyond the technical:
 - **Accessibility**: Making unique collections discoverable and accessible
 - **Innovative Models**: Enabling new forms of knowledge sharing not possible before
 
-By leveraging blockchain's unique capabilities, Library Protocol creates infrastructure for a more connected, trustworthy, and accessible global library system—one that preserves the best aspects of physical books while enhancing them with digital capabilities. 

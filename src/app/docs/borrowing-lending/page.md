@@ -76,5 +76,3 @@ Library Protocol supports specialized lending options:
 - **Collection Exchanges**: Between libraries for temporary exhibitions
 - **Community Programs**: Supporting reading initiatives in underserved areas
 - **Reading Circles**: Coordinated borrowing for book clubs and discussion groups
-
-By reimagining borrowing and lending through the lens of blockchain technology, Library Protocol creates a system that preserves the best aspects of traditional library lending while adding new layers of trust, transparency, and global reach. 
