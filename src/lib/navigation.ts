@@ -2,7 +2,7 @@ export const navigation = [
   {
     title: 'Manifesto',
     links: [
-      { title: 'Manifesto', href: '/docs/manifesto' },
+      { title: 'Manifesto', href: '/' },
     ],
   },
   {
