@@ -43,7 +43,7 @@ export function Hero() {
                   Get Started
                 </Link>
                 <Link
-                  href="/docs/manifesto"
+                  href="/"
                   className="rounded-lg bg-white/10 px-4 py-2.5 text-sm font-semibold text-white hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors duration-200"
                 >
                   Read Manifesto →
